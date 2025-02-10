@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purr-fect Valentine's Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <div class="flowers">
+            <div class="flower"></div>
+            <div class="flower"></div>
+            <div class="flower"></div>
+        </div>
+        <div class="cat">
+            <!-- Cat SVG -->
+            <svg viewBox="0 0 512 512" width="100" height="100">
+                <path d="M448 384v-32h-32V258.2c0-17.2-3.8-34.2-11.1-49.9l-8.3-18.6-18.6-8.3c-15.7-7.2-32.7-11.1-49.9-11.1H192c-17.2 0-34.2 3.8-49.9 11.1l-18.6 8.3-8.3 18.6c-7.2 15.7-11.1 32.7-11.1 49.9V352H64v32H32v96h448v-96h-32zM192 224h128c8.8 0 16-7.2 16-16s-7.2-16-16-16H192c-8.8 0-16 7.2-16 16s7.2 16 16 16z" fill="#FFB6C1"/>
+            </svg>
+        </div>
+        <div class="message">
+            <h1>Will You Be My Valentine? 💌</h1>
+            <p>Meow-tiful Human,<br>
+            You make my heart purr like never before!<br>
+            Let's paw-ty together on February 14th! 🐾</p>
+            <div class="buttons">
+                <button onclick="response(true)">Yes! 😻</button>
+                <button onmouseover="moveButton()" onclick="response(false)">Maybe? 🙀</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
