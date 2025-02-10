@@ -40,3 +40,38 @@ style.textContent = `@keyframes fall {
     to { transform: translateY(100vh) rotate(360deg); }
 }`;
 document.head.appendChild(style);
+
+/* Add these new styles */
+.gif-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.valentine-gif {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #FF69B4;
+    box-shadow: 0 0 20px rgba(255,105,180,0.5);
+}
+
+/* Update flower positions */
+.flower:nth-child(1) { top: 5%; left: 10%; }
+.flower:nth-child(2) { top: 80%; right: 10%; }
+.flower:nth-child(3) { top: 50%; left: 3%; }
+
+/* Make no button harder to click */
+button:last-child {
+    position: relative;
+    transition: all 0.1s ease;
+    pointer-events: none;
+}
+
+/* Disable hover effect for no button */
+button:last-child:hover {
+    background: #FF69B4;
+    transform: none;
+}
